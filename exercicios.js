@@ -48,4 +48,12 @@ var trabalhar = true
 
     }
 
+    function calcular (){
+        let numero = document.getElementById('tn1').value
+        let resp1 = document.getElementById('fatorial')
+        if(numero <= 0 || numero != inteiro){
+            resp1.innerHTML = 'Introduza um número interiro e positivo'
+        }
+    }
+
     
