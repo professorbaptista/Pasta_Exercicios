@@ -12,7 +12,7 @@ var trabalhar = true
         
     }
 
-    var numeroDeAtraso = 2
+    var numeroDeAtraso = 3
     if(numeroDeAtraso > 3){
         document.getElementById('atraso').innerHTML = 'Introduz um número igual ou inferior à três.'
     }
@@ -43,7 +43,7 @@ var trabalhar = true
         resNum.innerHTML = 'O primeiro numero é maior.'
     }
     else {
-        resNum.innerHTML = 'o segundo numero é maior.'
+        resNum.innerHTML = 'O segundo numero é maior.'
     }
 
     }
