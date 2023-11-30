@@ -69,4 +69,25 @@ var trabalhar = true
        resp1.innerHTML = fatorial
      }
 
+
+     function verificarVelo(){
+        var valor = document.getElementById('tn2').value
+        var resp2 = document.getElementById('multa') 
+        var velocidadeMax = 80
+        if ((valor < 0) || (valor == 0)){
+            resp2.innerHTML = 'Introduz o valor da velocidade.'
+        }
+
+        else if(valor <= velocidadeMax){
+            resp2.innerHTML = 'Velocidade Ok, você não foi multado.'
+        }
+        else if ( (valor > velocidadeMax) || (valor <= velocidadeMax)){
+            resp2.innerHTML = 'Excedeu a velocidade, Você levou uma multa leve'
+        }
+        else if ((valor > velocidadeMax) || (valor <= velocidadeMax) ){
+            resp2.innerHTML = 'Condução perigosa, você foi multa. Sua multa é grave.'
+        }
+        
+
+     }
     
