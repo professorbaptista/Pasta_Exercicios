@@ -50,10 +50,23 @@ var trabalhar = true
 
     function calcular (){
         let numero = document.getElementById('tn1').value
+
         let resp1 = document.getElementById('fatorial')
-        if(numero <= 0 || numero != inteiro){
-            resp1.innerHTML = 'Introduza um número interiro e positivo'
+        //para valores negativos
+        if(numero == ''){
+            resp1.innerHTML = 'Introduz um número'
         }
-    }
+        else if(numero < 0){
+            resp1.innerHTML = 'Introduz um número positivo'
+        }
+        else if ( (numero == 0) || (numero == 1)){
+            resp1.innerHTML = '1'
+        }
+        let fatorial = 1
+        for (x = numero;  x > 1; x--){
+        fatorial = fatorial*x
+        }
+       resp1.innerHTML = fatorial
+     }
 
     
