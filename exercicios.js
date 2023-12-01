@@ -90,4 +90,14 @@ var trabalhar = true
         
 
      }
+
+     function gerar(){
+        var primeiroNumero = document.getElementById('chute1').value
+        var segundoNumero = document.getElementById('chute2').value
+        var resposta = document.getElementById('div01')
+        if(primeiroNumero == ''){
+            resposta.innerHTML = 'Introduz um número!'
+        }
+        resposta.innerHTML = Math.floor( 10 * Math.random() +1)
+     }
     
